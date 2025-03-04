@@ -6,7 +6,7 @@ from sagemaker.serializers import CSVSerializer
 from sagemaker.deserializers import JSONDeserializer
 
 # 🚀 **Set Your SageMaker Endpoint Name**
-endpoint_name = "sagemaker-xgboost-2025-03-04-21-25-33-678"
+endpoint_name = "sagemaker-xgboost-have your own endpoint"
 
 # ✅ **Initialize SageMaker Predictor**
 predictor = Predictor(endpoint_name=endpoint_name, 
