@@ -48,7 +48,7 @@ To run this project, install the required dependencies:
 ### 📥 Install Dependencies
 ```bash
 pip install pandas numpy xgboost scikit-learn boto3 sagemaker streamlit
-
+```
 ### 📥 Download the Dataset
 1. Download the dataset from [Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud).
 2. Save it as `creditcard_reduced.csv` in the project directory.
