@@ -172,26 +172,6 @@ Ensure your IAM role has the necessary permissions for SageMaker and S3.
 ---
 
 ## **License**
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**.
 
 ---
-```
-
----
-
-### **Steps to Use This README**
-1. Open a text editor (e.g., VS Code, Notepad++, or any Markdown editor).
-2. Create a new file and name it `README.md`.
-3. Copy-paste the above raw Markdown content into the file.
-4. Save the file.
-
----
-
-### **Viewing the README**
-To view the formatted README:
-- Use a Markdown viewer (e.g., GitHub, VS Code with Markdown Preview, or an online Markdown editor like [Dillinger](https://dillinger.io/)).
-- Open the `README.md` file in the viewer, and it will render with proper formatting.
-
----
-
-Let me know if you encounter any issues! 🚀
