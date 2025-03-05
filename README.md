@@ -1,4 +1,4 @@
-# 🚀 Credit Card Fraud Detection using XGBoost
+# Credit Card Fraud Detection using XGBoost
 
 This project focuses on detecting fraudulent credit card transactions using the **XGBoost** machine learning algorithm. The dataset used is a reduced version of the [Credit Card Fraud Detection dataset](https://www.kaggle.com/mlg-ulb/creditcardfraud), which contains anonymized credit card transactions labeled as fraudulent or legitimate.
 
@@ -99,7 +99,7 @@ print(f"Model Accuracy: {accuracy:.4f}")
 
 ---
 
-## 🚀 Training on SageMaker
+## Training on SageMaker
 
 ### 1️⃣ **Upload Dataset to S3**
 ```python
@@ -137,7 +137,7 @@ estimator.fit({"train": train_input})
 
 ---
 
-## 📡 Deploying the Model with Streamlit
+## Deploying the Model with Streamlit
 
 ### 1️⃣ **Deploy Model in SageMaker (Real-Time API)**
 ```python
@@ -163,7 +163,7 @@ from sagemaker.deserializers import JSONDeserializer
 endpoint_name = "sagemaker-xgboost-endpoint"
 predictor = Predictor(endpoint_name, serializer=CSVSerializer(), deserializer=JSONDeserializer())
 
-st.title("🚀 Fraud Detection Model")
+st.title("Fraud Detection Model")
 st.write("Enter transaction details to check if it's fraudulent!")
 
 features = [st.number_input(f"Feature {i+1}", value=0.0) for i in range(30)]
@@ -174,7 +174,7 @@ if st.button("🔍 Predict Fraud"):
     score = prediction['predictions'][0]['score']
 
     if score > 0.5:
-        st.error(f"🚨 Fraud Alert! Risk Score: {score:.6f}")
+        st.error(f" Fraud Alert! Risk Score: {score:.6f}")
     else:
         st.success(f"✅ Transaction is Safe! Risk Score: {score:.6f}")
 ```
